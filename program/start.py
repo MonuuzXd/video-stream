@@ -94,7 +94,7 @@ async def start_(c: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("➕ Add me to a Group ➕", url=f"https://t.me/{me_bot.username}?startgroup=true")
+                    InlineKeyboardButton("💞 Add me to a Group 💞", url=f"https://t.me/{me_bot.username}?startgroup=true")
                 ],[
                     InlineKeyboardButton("❓ Basic Guide", callback_data="user_guide")
                 ],[
@@ -104,7 +104,7 @@ async def start_(c: Client, message: Message):
                     InlineKeyboardButton("👥 Support Group", url=f"https://t.me/{GROUP_SUPPORT}"),
                     InlineKeyboardButton("📣 Support Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],[
-                    InlineKeyboardButton("🌐 Source Code", url="https://github.com/levina-lab/video-stream")
+                    InlineKeyboardButton("🌐 Source Code", url="https://t.me/moluuzu")
                 ],
             ]
         ),
@@ -146,7 +146,7 @@ async def ping_pong(c: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("pinging...")
     delta_ping = time() - start
-    await m_reply.edit_text("🏓 PONG !\n" f"⏱ `{delta_ping * 1000:.3f} ms`")
+    await m_reply.edit_text("😂 PONG !\n" f"⏱ `{delta_ping * 1000:.3f} ms`")
 
 
 @Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
